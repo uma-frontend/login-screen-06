@@ -122,4 +122,58 @@ body{
    display: block;
    border-radius: 0 5px 5px 0;
    object-fit: cover;
+   object-position: center;
+}
+
+
+/*MEDIA QUERY*/
+@media (max-width: 1024px) {
+   .login-card{
+      flex-direction: column-reverse;
+   }
+   .login-card__info{
+      width: 100%;
+      text-align: center;
+   }
+   .login-card__box-img{
+      display: none;
+   }
+}
+@media (max-width: 768px) {
+   .login-card__text br{
+      display: none;
+   }
+   .login-card__item{
+      font-size: 12px;
+   }
+   .login-card__footer {
+      align-items: center;
+      flex-direction: column;
+   }
+   .login-card__footer-text{
+      margin: 0px 0px 10px 0px;
+   }
+}
+@media (max-width: 425px) {
+   .login-card__info-inner{
+      padding: 40px 15px 15px 20px;
+   }
+   .login-card__title{
+      font-size: 28px;
+   }
+   .login-card__items{
+      margin: 0px 0px 20px 0px;
+   }
+   .login-card__footer{
+      padding: 20px 15px 15px 20px;
+   }
+
+}
+@media (max-width: 320px) {
+   .login-card__info-inner{
+      padding: 30px 10px 10px 15px;
+   }
+   .login-card__footer{
+      padding: 20px 10px 10px 15px;
+   }
 }
